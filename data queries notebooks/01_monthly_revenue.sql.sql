@@ -5,6 +5,6 @@ SELECT
     ROUND(AVG(p.payment_value)::numeric, 2) AS avg_order_value
 FROM orders o
 LEFT JOIN order_payments p ON o.order_id = p.order_id
-WHERE o.order_status NOT IN ('cancelled', 'unavailable')
+WHERE o.order_status NOT IN ('cancelled', 'unavailable') and  (order_purchase_timestamp > '2017-01-01' and order_purchase_timestamp < '2018-08-31') 
 GROUP BY 1
 ORDER BY 1;
