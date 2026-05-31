@@ -1,8 +1,8 @@
 ## Data Source
-Dataset: Brazilian E-Commerce Public Dataset by Olist
-Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
-Download the CSVs and place them in the /data folder before running queries
-Note: Data files not included in repo due to size — download directly from Kaggle
+Dataset: Brazilian E-Commerce Public Dataset by Olist    
+Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce   
+Download the CSVs and place them in the /data folder before running queries   
+Note: Data files not included in repo due to size — download directly from Kaggle   
 
 ### Dataset Notes
 - Raw uncleaned dataset requiring data quality investigation
