@@ -36,3 +36,13 @@ Note: Data files not included in repo due to size — download directly from Kag
   ranks 3rd in revenue — cheapest category at R$93 avg price
 - Two distinct business models visible: volume-driven (health_beauty, 
   bed_bath_table) vs value-driven (watches_gifts, cool_stuff)
+
+### Delivery Performance Findings
+- Majority of sellers deliver earlier than estimated — negative 
+  difference indicates actual delivery beats estimated date
+- Worst performer delivers 1 day later than promised (difference: +1)
+- Best performer delivers 42 days ahead of estimated date
+- Most sellers deliver 3-6 days ahead of estimated delivery date
+- Suggests Olist's estimated delivery dates are set very conservatively
+- Wide range of delivery performance across sellers (−42 to +1 days)
+- Minimum 30 orders threshold applied to ensure statistical reliability
