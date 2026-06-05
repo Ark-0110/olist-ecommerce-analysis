@@ -46,3 +46,19 @@ Note: Data files not included in repo due to size — download directly from Kag
 - Suggests Olist's estimated delivery dates are set very conservatively
 - Wide range of delivery performance across sellers (−42 to +1 days)
 - Minimum 30 orders threshold applied to ensure statistical reliability
+
+### Cohort Analysis Findings
+- Month-1 retention rate consistently under 1% across all 20 cohorts
+- Range: 0.05% to 0.65% — never exceeds 1% in any single month
+- November 2017 largest cohort: 7,304 new customers, only 28 returned 
+  next month (0.38%)
+- Slight retention improvement mid-2017 (0.47-0.65%) but never sustained
+- August and July 2018 show near-zero retention — likely data trailing off
+- Pattern is completely consistent — Olist is an acquisition-driven business
+  with negligible repeat purchase behavior
+- Recommendation: invest in retention strategies — loyalty programs,
+  re-engagement campaigns, repeat purchase incentives to reduce dependency
+  on constant new customer acquisition
+  
+  
+  
