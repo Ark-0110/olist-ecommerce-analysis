@@ -59,6 +59,17 @@ Note: Data files not included in repo due to size — download directly from Kag
 - Recommendation: invest in retention strategies — loyalty programs,
   re-engagement campaigns, repeat purchase incentives to reduce dependency
   on constant new customer acquisition
-  
-  
+
+### Seller Performance Findings
+- All top 20 worst-rated sellers (by avg review score) still 
+  fall below 3.5 out of 5
+- Worst rated active seller: 2.27 avg score with 108 orders
+- Highest volume seller in worst-rated group: 973 orders, 
+  R$188,063 revenue, only 3.35 avg score
+- Customers continue purchasing from low-rated sellers — 
+  suggests price or availability overrides rating on Olist
+- Platform risk: no evidence of seller quality enforcement
+- Recommendation: implement seller rating thresholds — 
+  sellers below 3.0 with 50+ orders should trigger 
+  review or removal process
   
