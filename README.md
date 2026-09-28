@@ -65,3 +65,12 @@ Note: Data files not included in repo due to size — download directly from Kag
 - Smaller states show higher avg order value (R$200-249) — less frequent but higher value purchases
 - Extreme geographic concentration — SP has nearly 940x more orders than RR (bottom state)
 - Recommendation: growth opportunity in underserved northern and northeastern states, but logistics costs likely explain low penetration
+
+### Payment Analysis Findings
+- Credit card dominates: 76,248 orders (75%+ of total), R$12.5M revenue
+- Boleto second: 19,721 orders — popular with customers without credit access
+- Credit card avg 3.5 installments vs 1 for all other methods
+- Credit card has highest avg order value (R$163) vs boleto (R$145)
+- Installment availability is likely enabling higher value purchases
+- Vouchers show lowest avg order value (R$65) — likely discount/promo usage
+- Recommendation: installment flexibility is a key revenue driver — reducing installment options would likely hurt high-value purchases
