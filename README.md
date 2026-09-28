@@ -25,21 +25,15 @@ Note: Data files not included in repo due to size — download directly from Kag
 - Suggests customer acquisition was primary growth driver
 
 ## Revenue by Category Findings
-- Top 5 categories by revenue: health_beauty, watches_gifts, 
-  bed_bath_table, sports_leisure, computers_accessories
+- Top 5 categories by revenue: health_beauty, watches_gifts, bed_bath_table, sports_leisure, computers_accessories
 - Revenue rank and order volume rank don't always match
-- health_beauty leads revenue through volume (8,791 orders) 
-  at moderate price (R$130 avg)
-- watches_gifts achieves similar revenue with half the orders 
-  due to high average price (R$200)
-- bed_bath_table has highest order volume in top 5 (9,412) but 
-  ranks 3rd in revenue — cheapest category at R$93 avg price
-- Two distinct business models visible: volume-driven (health_beauty, 
-  bed_bath_table) vs value-driven (watches_gifts, cool_stuff)
+- health_beauty leads revenue through volume (8,791 orders) at moderate price (R$130 avg)
+- watches_gifts achieves similar revenue with half the orders due to high average price (R$200)
+- bed_bath_table has highest order volume in top 5 (9,412) but ranks 3rd in revenue — cheapest category at R$93 avg price
+- Two distinct business models visible: volume-driven (health_beauty, bed_bath_table) vs value-driven (watches_gifts, cool_stuff)
 
 ### Delivery Performance Findings
-- Majority of sellers deliver earlier than estimated — negative 
-  difference indicates actual delivery beats estimated date
+- Majority of sellers deliver earlier than estimated — negative difference indicates actual delivery beats estimated date
 - Worst performer delivers 1 day later than promised (difference: +1)
 - Best performer delivers 42 days ahead of estimated date
 - Most sellers deliver 3-6 days ahead of estimated delivery date
@@ -50,26 +44,24 @@ Note: Data files not included in repo due to size — download directly from Kag
 ### Cohort Analysis Findings
 - Month-1 retention rate consistently under 1% across all 20 cohorts
 - Range: 0.05% to 0.65% — never exceeds 1% in any single month
-- November 2017 largest cohort: 7,304 new customers, only 28 returned 
-  next month (0.38%)
+- November 2017 largest cohort: 7,304 new customers, only 28 returned next month (0.38%)
 - Slight retention improvement mid-2017 (0.47-0.65%) but never sustained
 - August and July 2018 show near-zero retention — likely data trailing off
-- Pattern is completely consistent — Olist is an acquisition-driven business
-  with negligible repeat purchase behavior
-- Recommendation: invest in retention strategies — loyalty programs,
-  re-engagement campaigns, repeat purchase incentives to reduce dependency
-  on constant new customer acquisition
+- Pattern is completely consistent — Olist is an acquisition-driven business with negligible repeat purchase behavior
+- Recommendation: invest in retention strategies — loyalty programs, re-engagement campaigns, repeat purchase incentives to reduce dependency on constant new customer acquisition
 
 ### Seller Performance Findings
-- All top 20 worst-rated sellers (by avg review score) still 
-  fall below 3.5 out of 5
+- All top 20 worst-rated sellers (by avg review score) still fall below 3.5 out of 5
 - Worst rated active seller: 2.27 avg score with 108 orders
-- Highest volume seller in worst-rated group: 973 orders, 
-  R$188,063 revenue, only 3.35 avg score
-- Customers continue purchasing from low-rated sellers — 
-  suggests price or availability overrides rating on Olist
+- Highest volume seller in worst-rated group: 973 orders, R$188,063 revenue, only 3.35 avg score
+- Customers continue purchasing from low-rated sellers — suggests price or availability overrides rating on Olist
 - Platform risk: no evidence of seller quality enforcement
-- Recommendation: implement seller rating thresholds — 
-  sellers below 3.0 with 50+ orders should trigger 
-  review or removal process
-  
+- Recommendation: implement seller rating thresholds — sellers below 3.0 with 50+ orders should trigger review or removal process
+
+### Geographic Analysis Findings
+- SP (São Paulo) dominates with R$5.9M revenue and 41,332 orders
+- Top 3 states (SP, RJ, MG) account for majority of total revenue
+- SP has lowest avg order value (R$137) despite highest volume — high frequency of lower-priced everyday purchases
+- Smaller states show higher avg order value (R$200-249) — less frequent but higher value purchases
+- Extreme geographic concentration — SP has nearly 940x more orders than RR (bottom state)
+- Recommendation: growth opportunity in underserved northern and northeastern states, but logistics costs likely explain low penetration
