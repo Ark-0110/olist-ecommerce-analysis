@@ -1,76 +1,74 @@
+# Olist E-Commerce Business Analytics
+
+End-to-end SQL and Python analysis of 100,000+ orders from Olist, 
+Brazil's largest e-commerce platform. Built to demonstrate business-focused 
+analytics skills including data quality assessment, cohort analysis, 
+seller performance evaluation, and customer behavior insights.
+
+## Tech Stack
+- PostgreSQL — database and all analytical queries
+- Python (pandas, matplotlib, seaborn) — data visualization
+- DBeaver — SQL client
+- GitHub — version control
+
 ## Data Source
-Dataset: Brazilian E-Commerce Public Dataset by Olist    
-Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce   
-Note: Data files not included in repo due to size — download directly from Kaggle   
+Dataset: Brazilian E-Commerce Public Dataset by Olist  
+Source: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce  
+Note: Data files not included in repo due to size — download directly 
+from Kaggle and place CSVs in the /data folder before running queries.
 
-## Dataset Notes
-- Raw uncleaned dataset requiring data quality investigation
-- Issues identified: missing months, near-zero periods at boundaries, sparse early data
-- Cleaning decisions documented and justified before analysis
+## Key Business Findings
 
-## Data Quality Finding — Clean Window
-- September/October 2016: sparse early data, platform just launching
-- November 2016: completely missing from dataset
-- December 2016: only 1 order — clear data gap
-- September/October 2018: near zero orders — dataset trails off
-- Clean reliable window: January 2017 through August 2018
-- All trend analysis scoped to this 20-month period
+### 1. Revenue Trends
+- Clear upward trend Jan 2017 through Jan 2018, driven by order 
+  volume not higher spend per order
+- Average order value stable at R$142-163 throughout — growth 
+  is purely acquisition driven
+- November 2017 Black Friday spike clearly visible in data
 
-## Monthly Revenue Findings (Clean Window: Jan 2017 - Aug 2018)
-- Clear upward revenue trend from Jan 2017 through Jan 2018
-- Growth driven by order volume increase, not higher spend per order
-- Average order value remains stable (R$142 - R$163 throughout) indicating growth is volume-driven not spend-driven
-- November 2017 shows clear spike — consistent with Black Friday effect
-- Revenue growth plateaus and fluctuates from early 2018 onwards
-- Suggests customer acquisition was primary growth driver
+### 2. Product Categories
+- Health & Beauty leads revenue through volume (8,791 orders, R$130 avg)
+- Watches & Gifts achieves similar revenue with half the orders 
+  due to high avg price (R$200)
+- Two distinct models: volume-driven vs value-driven categories
 
-## Revenue by Category Findings
-- Top 5 categories by revenue: health_beauty, watches_gifts, bed_bath_table, sports_leisure, computers_accessories
-- Revenue rank and order volume rank don't always match
-- health_beauty leads revenue through volume (8,791 orders) at moderate price (R$130 avg)
-- watches_gifts achieves similar revenue with half the orders due to high average price (R$200)
-- bed_bath_table has highest order volume in top 5 (9,412) but ranks 3rd in revenue — cheapest category at R$93 avg price
-- Two distinct business models visible: volume-driven (health_beauty, bed_bath_table) vs value-driven (watches_gifts, cool_stuff)
+### 3. Delivery Performance
+- Most sellers deliver 3-6 days ahead of estimated date
+- Olist sets conservative delivery estimates — good for customer experience
+- Best seller delivers 42 days early, worst delivers 1 day late
 
-### Delivery Performance Findings
-- Majority of sellers deliver earlier than estimated — negative difference indicates actual delivery beats estimated date
-- Worst performer delivers 1 day later than promised (difference: +1)
-- Best performer delivers 42 days ahead of estimated date
-- Most sellers deliver 3-6 days ahead of estimated delivery date
-- Suggests Olist's estimated delivery dates are set very conservatively
-- Wide range of delivery performance across sellers (−42 to +1 days)
-- Minimum 30 orders threshold applied to ensure statistical reliability
+### 4. Customer Retention (Cohort Analysis)
+- Month-1 retention rate under 1% across all 20 cohorts
+- November 2017 cohort: 7,304 new customers, only 28 returned next month
+- Olist is almost entirely acquisition-dependent — retention is negligible
+- Recommendation: loyalty programs and re-engagement campaigns needed
 
-### Cohort Analysis Findings
-- Month-1 retention rate consistently under 1% across all 20 cohorts
-- Range: 0.05% to 0.65% — never exceeds 1% in any single month
-- November 2017 largest cohort: 7,304 new customers, only 28 returned next month (0.38%)
-- Slight retention improvement mid-2017 (0.47-0.65%) but never sustained
-- August and July 2018 show near-zero retention — likely data trailing off
-- Pattern is completely consistent — Olist is an acquisition-driven business with negligible repeat purchase behavior
-- Recommendation: invest in retention strategies — loyalty programs, re-engagement campaigns, repeat purchase incentives to reduce dependency on constant new customer acquisition
+### 5. Seller Quality
+- Top 20 worst-rated active sellers all below 3.5/5 avg score
+- Customers continue buying from low-rated sellers — price overrides quality
+- Recommendation: implement seller rating thresholds with review process
 
-### Seller Performance Findings
-- All top 20 worst-rated sellers (by avg review score) still fall below 3.5 out of 5
-- Worst rated active seller: 2.27 avg score with 108 orders
-- Highest volume seller in worst-rated group: 973 orders, R$188,063 revenue, only 3.35 avg score
-- Customers continue purchasing from low-rated sellers — suggests price or availability overrides rating on Olist
-- Platform risk: no evidence of seller quality enforcement
-- Recommendation: implement seller rating thresholds — sellers below 3.0 with 50+ orders should trigger review or removal process
+### 6. Geographic Distribution
+- SP (São Paulo) generates R$5.9M — 940x more orders than smallest state
+- Smaller states show higher avg order value (R$200-249)
+- Growth opportunity in underserved northern and northeastern states
 
-### Geographic Analysis Findings
-- SP (São Paulo) dominates with R$5.9M revenue and 41,332 orders
-- Top 3 states (SP, RJ, MG) account for majority of total revenue
-- SP has lowest avg order value (R$137) despite highest volume — high frequency of lower-priced everyday purchases
-- Smaller states show higher avg order value (R$200-249) — less frequent but higher value purchases
-- Extreme geographic concentration — SP has nearly 940x more orders than RR (bottom state)
-- Recommendation: growth opportunity in underserved northern and northeastern states, but logistics costs likely explain low penetration
+### 7. Payment Behavior
+- Credit card dominates: 76,248 orders, R$12.5M revenue
+- Credit card customers average 3.5 installments — installments 
+  enable higher value purchases
+- Boleto (cash-equivalent) serves customers without credit access
 
-### Payment Analysis Findings
-- Credit card dominates: 76,248 orders (75%+ of total), R$12.5M revenue
-- Boleto second: 19,721 orders — popular with customers without credit access
-- Credit card avg 3.5 installments vs 1 for all other methods
-- Credit card has highest avg order value (R$163) vs boleto (R$145)
-- Installment availability is likely enabling higher value purchases
-- Vouchers show lowest avg order value (R$65) — likely discount/promo usage
-- Recommendation: installment flexibility is a key revenue driver — reducing installment options would likely hurt high-value purchases
+## Data Quality Notes
+- Clean analysis window: January 2017 through August 2018
+- November 2016 missing entirely from dataset
+- September-October 2018 show near-zero orders — data trails off
+- All findings scoped to clean 20-month window
+
+## Visualizations
+Charts saved in /notebooks folder:
+- Monthly revenue trend
+- Top 10 categories by revenue
+- Revenue by state
+- Payment type breakdown
+- Cohort retention heatmap
